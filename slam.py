@@ -17,3 +17,11 @@ def lines_printed_backwards(lines_list):
 
 
 lines_printed_backwards(lines_list)
+
+#Prints lines randomly, not sure how to make it NOT double count
+def lines_printed_random(lines_list):
+    for i in lines_list:
+        print(lines_list[randint(0, 26)])
+
+
+lines_printed_random(lines_list)
