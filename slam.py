@@ -1,3 +1,4 @@
+from random import randint
 def get_file_lines(filename):
     #open and read the file, then return a list of strings
     file_lines = open(filename, "r").readlines()
