@@ -22,7 +22,7 @@ lines_printed_backwards(lines_list)
 #Prints lines randomly, not sure how to make it NOT double count
 def lines_printed_random(lines_list):
     for i in lines_list:
-        print(lines_list[randint(0, 26)])
+        print(lines_list[randint(0, len(lines_list) - 1)])
 
 
 lines_printed_random(lines_list)
@@ -38,8 +38,7 @@ def lines_printed_custom(lines_list):
                 print(lines_list[i + 1]) #prints the index + 1, because line 2 is index 1 (which is not even)
     else: # same as above but for odds
         for i in range(len(lines_list)):
-            if i % 2 !== 0: 
+            if (i % 2 != 0):
                 print(lines_list[i])
-
 
 lines_printed_custom(lines_list)
