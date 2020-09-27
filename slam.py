@@ -26,3 +26,17 @@ def lines_printed_random(lines_list):
 
 
 lines_printed_random(lines_list)
+
+
+def lines_printed_custom(lines_list):
+    if (len(lines_list) % 2) == 0:
+        for i in range(len(lines_list)):
+            if i % 2 == 0:
+                print(lines_list[i + 1])
+    else:
+        for i in range(len(lines_list)):
+            if i % 2 != = 0:
+                print(lines_list[i])
+
+
+test(lines_list)
