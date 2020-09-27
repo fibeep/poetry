@@ -17,7 +17,7 @@ def lines_printed_backwards(lines_list):
         print(len(lines_list) - (i), lines_list[-(i + 1)])
 
 
-#lines_printed_backwards(lines_list)
+lines_printed_backwards(lines_list)
 
 #Prints lines randomly, not sure how to make it NOT double count
 def lines_printed_random(lines_list):
@@ -25,7 +25,7 @@ def lines_printed_random(lines_list):
         print(lines_list[randint(0, len(lines_list) - 1)])
 
 
-#lines_printed_random(lines_list)
+lines_printed_random(lines_list)
 
 #This custom function will determine whether the text 
 #document has an even or odd number of lines, and then
