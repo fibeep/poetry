@@ -6,6 +6,7 @@ def get_file_lines(filename):
     for line in file_lines:
         split_lines = line.rstrip().split(",")
         lines_array.append(split_lines)
+    file_lines.close()
     return lines_array
 
 
@@ -17,7 +18,7 @@ def lines_printed_backwards(lines_list):
         print(len(lines_list) - (i), lines_list[-(i + 1)])
 
 
-lines_printed_backwards(lines_list)
+#lines_printed_backwards(lines_list)
 
 #Prints lines randomly, not sure how to make it NOT double count
 def lines_printed_random(lines_list):
@@ -25,7 +26,7 @@ def lines_printed_random(lines_list):
         print(lines_list[randint(0, len(lines_list) - 1)])
 
 
-lines_printed_random(lines_list)
+#lines_printed_random(lines_list)
 
 #This custom function will determine whether the text 
 #document has an even or odd number of lines, and then
@@ -38,7 +39,7 @@ def lines_printed_custom(lines_list):
                 print(lines_list[i + 1]) #prints the index + 1, because line 2 is index 1 (which is not even)
     else: # same as above but for odds
         for i in range(len(lines_list)):
-            if (i % 2 != 0):
+            if i % 2 != 0:
                 print(lines_list[i + 1])
 
 lines_printed_custom(lines_list)
